@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="punch.css">
+</head>
+<body>
+    <!-- <div class="flexboxes">
+        <div class="box">ELECTRON</div>
+        <div class="box food">FOOD</div>
+        <div class="box">CLOTHING</div>
+        <div class="box">PROPERTY</div>
+        <div class="box">H-S GADGETS</div>
+    </div> -->
+
+            <header>
+                <nav class="top-link">
+                    <div class="advert_notification">
+                    <a href="">Advertise with us | </a>
+                    <a href="">Sunday, July 7, 2024</a>
+                    </div>
+                </nav>
+                
+                <div class="menu-dropdown" id="menu-dropdown">
+                    <button class="menu-close" id="menu-close"><b>X</b></button>
+                   <ul class="menu-list">
+                    <h3>PunchNG Menu:</h3>
+                    <li>Video</li>
+                    <li>Spice</li>
+                    <li>Special Features</li>
+                    <li>Education</li>
+                    <li>Sex & Relationship</li>
+                    <li>Interview</li>
+                    <li>Columns</li>
+                    <li>Opinion</li>
+                    <li>Advertise with us</li>
+                   </ul> 
+                </div>
+            
+                <div class="sticky-header-container"> 
+                    <progress class="progress" id="progress" value="0" max="100">0</progress>   
+                    <nav class="header-container">
+                        <ul class="social-buttons">
+                            <li>
+                            <a aria-label="twitter page url" href="https://twitter.com/MobilePunch" target="_blank" title="Follow Us on X"><svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><path d="M256 0c141.385 0 256 114.615 256 256S397.385 512 256 512 0 397.385 0 256 114.615 0 256 0z"></path><path fill="#fff" fill-rule="nonzero" d="M318.64 157.549h33.401l-72.973 83.407 85.85 113.495h-67.222l-52.647-68.836-60.242 68.836h-33.423l78.052-89.212-82.354-107.69h68.924l47.59 62.917 55.044-62.917zm-11.724 176.908h18.51L205.95 176.493h-19.86l120.826 157.964z"></path></svg></a>
+                            </li>
+                            <li>
+                            <a aria-label="instagram page url" href="https://www.instagram.com/punchnewspapers" target="_blank" title="Follow Us on Instagram"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="32" width="32" viewBox="-19.5036 -32.49725 169.0312 194.9835"><defs><radialGradient fy="578.088" fx="158.429" gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.399 454.004)" gradientUnits="userSpaceOnUse" xlink:href="#a" r="65" cy="578.088" cx="158.429" id="c"></radialGradient><radialGradient fy="473.455" fx="147.694" gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.351 -458.493)" gradientUnits="userSpaceOnUse" xlink:href="#b" r="65" cy="473.455" cx="147.694" id="d"></radialGradient><linearGradient id="b"><stop stop-color="#3771c8" offset="0"></stop><stop offset=".128" stop-color="#3771c8"></stop><stop stop-opacity="0" stop-color="#60f" offset="1"></stop></linearGradient><linearGradient id="a"><stop stop-color="#fd5" offset="0"></stop><stop stop-color="#fd5" offset=".1"></stop><stop stop-color="#ff543e" offset=".5"></stop><stop stop-color="#c837ab" offset="1"></stop></linearGradient></defs><path d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z" fill="url(#c)"></path><path d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z" fill="url(#d)"></path><path d="M65.003 17c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C17.06 50.327 17 51.964 17 65s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97a5.76 5.76 0 105.76 5.758c0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C78.616 89.645 89.65 78.613 89.65 65S78.615 40.35 65.002 40.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z" fill="#fff"></path></svg></a>
+                            </li>
+                            <li>
+                            <a aria-label="punch facebook page url" href="https://www.facebook.com/punchnewspaper" target="_blank" title="Follow Us on Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="29px" height="29px"><linearGradient id="Ld6sqrtcxMyckEl6xeDdMa" x1="9.993" x2="40.615" y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#007ad9"></stop></linearGradient><path fill="url(#Ld6sqrtcxMyckEl6xeDdMa)" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path><path fill="#fff" d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"></path></svg></a>
+                            </li>
+                            <li>
+                            <a aria-label="punch telegram group url" href="https://t.me/PunchNewspaper" target="_blank" title="Follow Our Channel on Telegram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="29px" height="29px"><path fill="#29b6f6" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path><path fill="#fff" d="M33.95,15l-3.746,19.126c0,0-0.161,0.874-1.245,0.874c-0.576,0-0.873-0.274-0.873-0.274l-8.114-6.733 l-3.97-2.001l-5.095-1.355c0,0-0.907-0.262-0.907-1.012c0-0.625,0.933-0.923,0.933-0.923l21.316-8.468 c-0.001-0.001,0.651-0.235,1.126-0.234C33.667,14,34,14.125,34,14.5C34,14.75,33.95,15,33.95,15z"></path><path fill="#b0bec5" d="M23,30.505l-3.426,3.374c0,0-0.149,0.115-0.348,0.12c-0.069,0.002-0.143-0.009-0.219-0.043 l0.964-5.965L23,30.505z"></path><path fill="#cfd8dc" d="M29.897,18.196c-0.169-0.22-0.481-0.26-0.701-0.093L16,26c0,0,2.106,5.892,2.427,6.912 c0.322,1.021,0.58,1.045,0.58,1.045l0.964-5.965l9.832-9.096C30.023,18.729,30.064,18.416,29.897,18.196z"></path></svg></a>
+                            </li>
+                            <li>
+                            <a aria-label="punch linkedin page url" href="https://www.linkedin.com/company/punchnewspapers" target="_blank" title="Follow us on Linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="29px" height="29px"><path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5    V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364  c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274 L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479  C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677    c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638  c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001    c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12   c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698 c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19   c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path></svg></a>
+                            </li>
+                            <li>
+                            <a aria-label="punch Tiktok page url" href="https://www.tiktok.com/@punchnewspapers" target="_blank" title="Follow us on Tiktok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="29px" height="29px" clip-rule="evenodd"><path fill="#212121" fill-rule="evenodd" d="M10.904,6h26.191C39.804,6,42,8.196,42,10.904v26.191 C42,39.804,39.804,42,37.096,42H10.904C8.196,42,6,39.804,6,37.096V10.904C6,8.196,8.196,6,10.904,6z" clip-rule="evenodd"></path><path fill="#ec407a" fill-rule="evenodd" d="M29.208,20.607c1.576,1.126,3.507,1.788,5.592,1.788v-4.011 c-0.395,0-0.788-0.041-1.174-0.123v3.157c-2.085,0-4.015-0.663-5.592-1.788v8.184c0,4.094-3.321,7.413-7.417,7.413 c-1.528,0-2.949-0.462-4.129-1.254c1.347,1.376,3.225,2.23,5.303,2.23c4.096,0,7.417-3.319,7.417-7.413L29.208,20.607L29.208,20.607 z M30.657,16.561c-0.805-0.879-1.334-2.016-1.449-3.273v-0.516h-1.113C28.375,14.369,29.331,15.734,30.657,16.561L30.657,16.561z M19.079,30.832c-0.45-0.59-0.693-1.311-0.692-2.053c0-1.873,1.519-3.391,3.393-3.391c0.349,0,0.696,0.053,1.029,0.159v-4.1 c-0.389-0.053-0.781-0.076-1.174-0.068v3.191c-0.333-0.106-0.68-0.159-1.03-0.159c-1.874,0-3.393,1.518-3.393,3.391 C17.213,29.127,17.972,30.274,19.079,30.832z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M28.034,19.63c1.576,1.126,3.507,1.788,5.592,1.788v-3.157 c-1.164-0.248-2.194-0.856-2.969-1.701c-1.326-0.827-2.281-2.191-2.561-3.788h-2.923v16.018c-0.007,1.867-1.523,3.379-3.393,3.379 c-1.102,0-2.081-0.525-2.701-1.338c-1.107-0.558-1.866-1.705-1.866-3.029c0-1.873,1.519-3.391,3.393-3.391 c0.359,0,0.705,0.056,1.03,0.159V21.38c-4.024,0.083-7.26,3.369-7.26,7.411c0,2.018,0.806,3.847,2.114,5.183 c1.18,0.792,2.601,1.254,4.129,1.254c4.096,0,7.417-3.319,7.417-7.413L28.034,19.63L28.034,19.63z" clip-rule="evenodd"></path><path fill="#81d4fa" fill-rule="evenodd" d="M33.626,18.262v-0.854c-1.05,0.002-2.078-0.292-2.969-0.848 C31.445,17.423,32.483,18.018,33.626,18.262z M28.095,12.772c-0.027-0.153-0.047-0.306-0.061-0.461v-0.516h-4.036v16.019 c-0.006,1.867-1.523,3.379-3.393,3.379c-0.549,0-1.067-0.13-1.526-0.362c0.62,0.813,1.599,1.338,2.701,1.338 c1.87,0,3.386-1.512,3.393-3.379V12.772H28.095z M21.635,21.38v-0.909c-0.337-0.046-0.677-0.069-1.018-0.069 c-4.097,0-7.417,3.319-7.417,7.413c0,2.567,1.305,4.829,3.288,6.159c-1.308-1.336-2.114-3.165-2.114-5.183 C14.374,24.749,17.611,21.463,21.635,21.38z" clip-rule="evenodd"></path></svg></a>
+                            </li>
+                            <li>
+                            <a aria-label="punch whatsapp channel" href="https://whatsapp.com/channel/0029Va5M78l35fLt7xvmGQ2z" target="_blank" title="Follow us on our Whatsapp Channel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px" clip-rule="evenodd"><path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path></svg></a>
+                            </li>
+  
+                        </ul>
+
+                    <span class="logo-container">
+                        <svg width="171" height="63" viewBox="0 0 171 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M69.8891 17.8491L95.9092 41.0388V11.1304C97.896 12.8074 99.5837 14.196 101.25 15.638C101.485 15.91 101.607 16.2615 101.592 16.6207C101.592 28.5556 101.592 40.4869 101.592 52.4147C101.566 52.685 101.52 52.9528 101.453 53.2158L75.6144 30.1009C75.6144 30.7311 75.5396 31.169 75.5396 31.5536C75.5396 38.2616 75.5396 44.9696 75.5396 51.6884C75.5396 52.7565 75.1978 53.141 74.1083 53.077C72.7411 52.9915 71.3738 53.077 69.8357 53.077L69.8891 17.8491Z" fill="#FF0000"></path>
+                            <path d="M133.828 52.3399V21.2564C133.828 19.5581 133.828 19.5581 135.601 19.5581H139.928V31.3826H156.697C156.697 30.9767 156.751 30.5387 156.751 30.1008C156.751 26.9604 156.751 23.8093 156.751 20.6583C156.751 19.7717 157.039 19.5047 157.904 19.5367C159.517 19.5901 161.109 19.5367 162.893 19.5367C162.893 20.0067 162.957 20.4019 162.957 20.7971C162.957 30.8271 162.957 40.8465 162.957 50.8765C162.957 51.9446 162.647 52.3505 161.547 52.2971C160.019 52.2224 158.481 52.2971 156.815 52.2971C156.815 51.7737 156.751 51.3358 156.751 50.8978C156.751 46.465 156.751 42.0428 156.751 37.6099C156.751 36.8409 156.591 36.4777 155.683 36.4884C150.652 36.4884 145.621 36.4884 140.59 36.4884C140.389 36.5038 140.189 36.5324 139.992 36.5738C139.992 37.0331 139.928 37.4711 139.928 37.909C139.928 42.2992 139.928 46.6893 139.928 51.0794C139.928 52.0194 139.607 52.3185 138.699 52.2865C137.204 52.2544 135.591 52.3399 133.828 52.3399Z" fill="#FF0000"></path>
+                            <path d="M67.571 19.5579C67.571 19.9745 67.6458 20.2629 67.6458 20.5406C67.6458 27.3341 67.6458 34.1276 67.6458 40.9317C67.6458 47.7359 63.4479 52.0513 56.6972 52.8417C53.7301 53.2357 50.7191 53.1527 47.7782 52.596C42.0422 51.389 38.5814 47.4262 38.4533 41.6581C38.3358 34.651 38.4532 27.6439 38.3892 20.6474C38.3892 19.8249 38.6776 19.5793 39.4573 19.5793C41.0702 19.6327 42.6618 19.5793 44.4562 19.5793V21.1601C44.4562 27.0884 44.4562 33.0167 44.4562 38.945C44.4699 40.0955 44.606 41.2413 44.8621 42.3631C45.1581 43.9286 45.9957 45.34 47.2281 46.3497C48.4605 47.3595 50.009 47.9032 51.6022 47.8855C52.8476 47.9963 54.1016 47.9676 55.3407 47.8C57.0836 47.6035 58.685 46.7466 59.8155 45.4054C60.946 44.0643 61.5197 42.341 61.4185 40.5899C61.4932 34.0848 61.4825 27.5798 61.4185 21.0747C61.4185 19.8997 61.6855 19.4297 62.9245 19.5152C64.4413 19.6327 65.9367 19.5579 67.571 19.5579Z" fill="#FF0000"></path>
+                            <path d="M132.45 27.9538C131.788 27.5158 131.382 27.2061 130.923 26.8856C125.582 23.5209 119.964 22.613 114.228 25.8175C112.167 27.0728 110.55 28.9413 109.604 31.1612C108.658 33.3811 108.43 35.8413 108.951 38.1974C109.346 40.5643 110.47 42.7488 112.167 44.4455C113.864 46.1423 116.048 47.2666 118.415 47.6613C120.651 48.0393 122.941 47.9577 125.145 47.4215C127.349 46.8852 129.42 45.9056 131.233 44.5423C131.585 44.2966 131.948 44.0723 132.525 43.6984C132.525 45.8347 132.525 47.6827 132.525 49.5199C132.525 49.8724 131.97 50.289 131.575 50.524C127.787 52.6607 123.416 53.5326 119.099 53.0128C114.447 52.7982 110.053 50.8152 106.815 47.469C98.4726 38.6888 102.126 24.2152 113.769 20.1028C116.718 18.9892 119.878 18.5475 123.019 18.8099C126.16 19.0723 129.204 20.0322 131.927 21.6196C132.231 21.7381 132.484 21.9583 132.644 22.2427C132.804 22.527 132.86 22.858 132.803 23.1791C132.643 24.6532 132.579 26.1379 132.45 27.9538Z" fill="#FF0000"></path>
+                            <path d="M21.9397 37.8129V49.1354C21.9397 52.3399 21.9397 52.3399 18.7353 52.3399H16.1717C16.1717 51.7631 16.0969 51.2717 16.0969 50.8765C16.0969 40.9853 16.0969 31.0835 16.0969 21.1817C16.0969 19.9533 16.3853 19.5154 17.6885 19.5688C21.5445 19.7183 25.4112 19.6863 29.2672 19.8358C31.3915 19.8151 33.4397 20.6257 34.9745 22.0946C36.5093 23.5635 37.4089 25.5743 37.4813 27.6974C37.7056 33.316 35.0886 36.8195 30.0042 37.4284C27.3659 37.6954 24.7383 37.6741 21.9397 37.8129ZM22.2708 33.2198C24.311 33.0489 26.2871 32.9848 28.2311 32.7071C30.1751 32.4294 30.9015 31.4467 31.1578 29.5026C31.3169 28.6756 31.2141 27.8196 30.8637 27.0537C30.5134 26.2879 29.9329 25.6504 29.2031 25.23C26.9852 24.4281 24.6005 24.2003 22.2708 24.5677V33.2198Z" fill="#FF0000"></path>
+                            <path d="M69.8998 9.82715H32.0659V15.67H69.8998V9.82715Z" fill="#FCC90F"></path>
+                            <path d="M79.8013 9.82715H69.8889V15.67H79.8013V9.82715Z" fill="#EBE80A"></path>
+                            <path d="M94.1252 9.82715H79.812V15.67H94.1252V9.82715Z" fill="#FFFF00"></path>
+                            <path d="M109.09 9.82715H103.247V15.67H109.09V9.82715Z" fill="#FFCF00"></path>
+                            <path d="M114.933 9.82715H109.09V15.67H114.933V9.82715Z" fill="#FFFF00"></path>
+                            <path d="M163 9.82715H155.693V15.67H163V9.82715Z" fill="#94CF00"></path>
+                            <path d="M155.693 9.82715H114.933V15.67H155.693V9.82715Z" fill="#E0FF19"></path>
+                            <path d="M32.0658 9.82715H16.0542V15.67H32.0658V9.82715Z" fill="#FA450D"></path>
+                        </svg>
+                        <small>Most Widely Read Newspaper</small>
+                    </span>
+                    <div class="action-buttons">
+                        <button id="search-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
+                        </button>
+                            
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection-play" viewBox="0 0 16 16"><path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1zm2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"></path><path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5h13z"></path></svg>
+                            Videos
+                        </button>
+
+                    </div>
+                </nav>
+                    <nav>
+                        <ul class="top-navigation">
+                            <li>Home</li>
+                            <li>News</li>
+                            <li>Sports</li>
+                            <li>Investigations</li>
+                            <li>Metro Plus</li>
+                            <li>Videos</li>
+                            <li>Politics</li>
+                            <li>Business</li>
+                            <li>HealthWise</li>
+                            <li>Editorial</li>
+                            <li>Columns</li>
+                            <li>PUNCH Lite</li>
+                            <li id="menu-bar"><i class="fa-solid fa-bars"></i></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="advertisement-container">
+                    <div>
+                    ADVERTISEMENT
+                    </div>
+                </div>
+            </header>
+            
+    <main>
+        <aside class="aside-left" id="side-social-media1">
+            <ul class="side-social-media" id="side-social-media">
+                <li>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.75 30H6.25C2.79875 30 0 27.2013 0 23.75V6.25C0 2.79875 2.79875 0 6.25 0H23.75C27.2025 0 30 2.79875 30 6.25V23.75C30 27.2013 27.2025 30 23.75 30ZM20.32 23.565C20.5888 23.7562 20.9338 23.8037 21.2425 23.6862C21.55 23.57 21.7775 23.3062 21.8462 22.9862C22.57 19.5837 24.3275 10.9688 24.9862 7.87375C25.035 7.64 24.9525 7.3975 24.77 7.24125C24.5863 7.08625 24.3313 7.04125 24.105 7.125C20.6112 8.4175 9.85 12.455 5.45125 14.0837C5.1725 14.1863 4.99125 14.455 5 14.75C5.01 15.0437 5.20875 15.3 5.49375 15.3862C7.46625 15.975 10.0562 16.7962 10.0562 16.7962C10.0562 16.7962 11.265 20.4513 11.8962 22.3088C11.975 22.5425 12.1587 22.7263 12.3987 22.7888C12.64 22.8513 12.895 22.7863 13.075 22.6163C14.0887 21.66 15.655 20.1813 15.655 20.1813C15.655 20.1813 18.6313 22.3637 20.32 23.565ZM11.145 16.335L12.5437 20.95L12.855 18.0275C12.855 18.0275 18.26 13.1525 21.3425 10.3725C21.4325 10.2913 21.445 10.155 21.37 10.0588C21.295 9.9625 21.1587 9.94 21.0562 10.005C17.485 12.2863 11.145 16.335 11.145 16.335Z" fill="#229ED9"></path></svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50">
+                        <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                        </svg>
+                </li>
+                <li>
+                    <svg height="30" width="30" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" style="fill:#1777f2;"></path></svg>
+                </li>
+                <li>
+                    <svg height="30" width="30" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="WhatsApp-Logo-Icon"><path d="M116.225,-0.001c-11.264,0.512 -26.112,1.536 -32.768,3.072c-10.24,2.048 -19.968,5.12 -27.648,9.216c-9.728,4.608 -17.92,10.752 -25.088,17.92c-7.68,7.68 -13.824,15.872 -18.432,25.6c-4.096,7.68 -7.168,17.408 -9.216,27.648c-1.536,6.656 -2.56,21.504 -2.56,32.768c-0.512,4.608 -0.512,10.752 -0.512,13.824l0,251.905l0,13.824c0.512,11.264 1.536,26.112 3.072,32.768c2.048,10.24 5.12,19.968 9.216,27.648c4.608,9.728 10.752,17.92 17.92,25.088c7.68,7.68 15.872,13.824 25.6,18.432c7.68,4.096 17.408,7.168 27.648,9.216c6.656,1.536 21.504,2.56 32.768,2.56c4.608,0.512 10.752,0.512 13.824,0.512l251.904,0l13.824,0c11.264,-0.512 26.112,-1.536 32.768,-3.072c10.24,-2.048 19.968,-5.12 27.648,-9.216c9.728,-4.608 17.92,-10.752 25.088,-17.92c7.68,-7.68 13.824,-15.872 18.432,-25.6c4.096,-7.68 7.168,-17.408 9.216,-27.648c1.536,-6.656 2.56,-21.504 2.56,-32.768c0.512,-4.608 0.512,-10.752 0.512,-13.824l0,-265.729c-0.512,-11.264 -1.536,-26.112 -3.072,-32.768c-2.048,-10.24 -5.12,-19.968 -9.216,-27.648c-4.608,-9.728 -10.752,-17.92 -17.92,-25.088c-7.68,-7.68 -15.872,-13.824 -25.6,-18.432c-7.68,-4.096 -17.408,-7.168 -27.648,-9.216c-6.656,-1.536 -21.504,-2.56 -32.768,-2.56c-4.608,-0.512 -10.752,-0.512 -13.824,-0.512l-265.728,0Z" style="fill:url(#_Linear1);fill-rule:nonzero;"></path><path d="M344.754,289.698c-4.56,-2.282 -26.98,-13.311 -31.161,-14.832c-4.18,-1.521 -7.219,-2.282 -10.259,2.282c-3.041,4.564 -11.78,14.832 -14.44,17.875c-2.66,3.042 -5.32,3.423 -9.88,1.14c-4.561,-2.281 -19.254,-7.095 -36.672,-22.627c-13.556,-12.087 -22.709,-27.017 -25.369,-31.581c-2.66,-4.564 -0.283,-7.031 2,-9.304c2.051,-2.041 4.56,-5.324 6.84,-7.986c2.28,-2.662 3.04,-4.564 4.56,-7.606c1.52,-3.042 0.76,-5.705 -0.38,-7.987c-1.14,-2.282 -10.26,-24.72 -14.06,-33.848c-3.701,-8.889 -7.461,-7.686 -10.26,-7.826c-2.657,-0.132 -5.7,-0.16 -8.74,-0.16c-3.041,0 -7.98,1.141 -12.161,5.704c-4.18,4.564 -15.96,15.594 -15.96,38.032c0,22.438 16.34,44.116 18.62,47.159c2.281,3.043 32.157,49.089 77.902,68.836c10.88,4.697 19.374,7.501 25.997,9.603c10.924,3.469 20.866,2.98 28.723,1.806c8.761,-1.309 26.98,-11.029 30.781,-21.677c3.799,-10.649 3.799,-19.777 2.659,-21.678c-1.139,-1.902 -4.179,-3.043 -8.74,-5.325m-83.207,113.573l-0.061,0c-27.22,-0.011 -53.917,-7.32 -77.207,-21.137l-5.539,-3.287l-57.413,15.056l15.325,-55.959l-3.608,-5.736c-15.184,-24.145 -23.203,-52.051 -23.192,-80.704c0.033,-83.611 68.083,-151.635 151.756,-151.635c40.517,0.016 78.603,15.811 107.243,44.474c28.64,28.663 44.404,66.764 44.389,107.283c-0.035,83.617 -68.083,151.645 -151.693,151.645m129.102,-280.709c-34.457,-34.486 -80.281,-53.487 -129.103,-53.507c-100.595,0 -182.468,81.841 -182.508,182.437c-0.013,32.156 8.39,63.546 24.361,91.212l-25.892,94.545l96.75,-25.37c26.657,14.535 56.67,22.194 87.216,22.207l0.075,0c100.586,0 182.465,-81.852 182.506,-182.448c0.019,-48.751 -18.946,-94.59 -53.405,-129.076" style="fill:#fff;"></path></g><defs><linearGradient gradientTransform="matrix(0,-512,-512,0,256.001,512)" gradientUnits="userSpaceOnUse" id="_Linear1" x1="0" x2="1" y1="0" y2="0"><stop offset="0" style="stop-color:#25cf43;stop-opacity:1"></stop><stop offset="1" style="stop-color:#61fd7d;stop-opacity:1"></stop></linearGradient></defs></svg>
+                </li>
+                <li>
+                    <svg height="30" width="30" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"></path><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"></rect><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"></path><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"></path></g></g></svg>
+                </li>
+                <li>
+                    <svg height="30" width="30" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M448,512l-384,0c-35.348,0 -64,-28.652 -64,-64l0,-384c0,-35.344 28.652,-64 64,-64l384,0c35.348,0 64,28.656 64,64l0,384c0,35.348 -28.652,64 -64,64Z" style="fill:#f04923;fill-rule:nonzero;"></path><path d="M322.84,312.896c-15.68,0 -28.444,-12.76 -28.444,-28.44c0,-15.688 12.764,-28.456 28.444,-28.456c15.684,0 28.448,12.768 28.448,28.456c0,15.68 -12.764,28.44 -28.448,28.44Zm5.008,46.716c-19.412,19.384 -56.612,20.892 -67.548,20.892c-10.944,0 -48.148,-1.508 -67.536,-20.896c-2.88,-2.88 -2.88,-7.548 0,-10.428c2.876,-2.872 7.548,-2.876 10.424,0c12.236,12.24 38.412,16.584 57.112,16.584c18.696,0 44.876,-4.344 57.132,-16.588c2.888,-2.872 7.552,-2.868 10.424,0.008c2.88,2.884 2.876,7.548 -0.008,10.428Zm-158.604,-75.16c0,-15.688 12.764,-28.452 28.456,-28.452c15.676,0 28.432,12.764 28.432,28.452c0,15.68 -12.756,28.436 -28.432,28.436c-15.692,0 -28.456,-12.756 -28.456,-28.436Zm273.02,-28.452c0,-21.992 -17.828,-39.82 -39.82,-39.82c-10.736,0 -20.456,4.268 -27.62,11.172c-27.22,-19.64 -64.724,-32.328 -106.496,-33.784l18.14,-85.348l59.264,12.6c0.724,15.068 13.064,27.092 28.308,27.092c15.712,0 28.448,-12.736 28.448,-28.444c0,-15.708 -12.736,-28.444 -28.448,-28.444c-11.172,0 -20.74,6.504 -25.392,15.876l-66.18,-14.068c-1.84,-0.4 -3.772,-0.04 -5.348,0.992c-1.588,1.028 -2.692,2.644 -3.088,4.488l-20.256,95.228c-42.384,1.176 -80.488,13.88 -108.06,33.74c-7.152,-6.86 -16.844,-11.1 -27.54,-11.1c-21.992,0 -39.824,17.828 -39.824,39.82c0,16.18 9.668,30.08 23.528,36.312c-0.612,3.96 -0.948,7.976 -0.948,12.044c0,61.268 71.316,110.932 159.288,110.932c87.972,0 159.292,-49.664 159.292,-110.932c0,-4.04 -0.332,-8.032 -0.936,-11.964c13.948,-6.196 23.688,-20.144 23.688,-36.392Z" style="fill:#fff;fill-rule:nonzero;"></path></g></svg>
+                </li>
+            </ul>
+        </aside>
+
+        <article>
+            <h1>Minimum wage: Labour rejects govs bid to take over negotiations</h1>
+
+            <img src="https://cdn.punchng.com/wp-content/uploads/2024/05/01193552/Labour.jpg" alt="Labour" srcset="https://cdn.punchng.com/wp-content/uploads/2024/05/01193552/Labour-300x200.jpg 300w, https://cdn.punchng.com/wp-content/uploads/2024/05/01193552/Labour-768x511.jpg 768w, https://cdn.punchng.com/wp-content/uploads/2024/05/01193552/Labour-313x208.jpg 313w, https://cdn.punchng.com/wp-content/uploads/2024/05/01193552/Labour-640x426.jpg 640w, https://cdn.punchng.com/wp-content/uploads/2024/05/01193552/Labour-255x170.jpg 255w, https://cdn.punchng.com/wp-content/uploads/2024/05/01193552/Labour-150x100.jpg 150w, https://cdn.punchng.com/wp-content/uploads/2024/05/01193552/Labour-60x40.jpg 60w, https://cdn.punchng.com/wp-content/uploads/2024/05/01193552/Labour.jpg 960w" loading="lazy" sizes="(max-width: 960px) 100vw, 960px" class="post-image s/f" 
+                width="670"
+                height="446">
+
+            <div class="picture-caption-container"><p>The NLC President, Joe Ajaero, and others</p></div>
+
+            <span class="post-author">
+                Chukwudi Akasike and Olufemi Adediran
+            </span>
+
+            <p>
+                <em><strong>Govs unfriendly, some states yet to pay N30, 000 approved five years ago – NLC
+                States should be allowed to negotiate with workers, govs insist</strong>
+                </em>
+            </p>
+
+            <p>Organised Labour, including the Nigeria Labour Congress and the Trade Union Congress, has rejected the proposal of the Southern Governors’ Forum to decentralise minimum wage negotiations to state governments.
+            </p>
+            <p>The NLC condemned the proposal as “unfriendly and anti-worker”, noting that allowing states to determine their minimum wages would be detrimental to workers’ welfare.
+            </p>
+            <p>On Friday, The PUNCH had reported that the Southern Governors’ Forum sought for states to be allowed to negotiate the minimum wage for workers independently. At the end of a meeting held on Monday at the Ogun State Presidential Lodge in Abeokuta, the forum resolved that wages should be reflective of the cost of living.
+            </p>
+            <p>This was revealed in a communique issued from the meeting and signed by the newly-appointed Chairman of the forum, Governor Dapo Abiodun of Ogun State; and Vice-Chairman, Prof Charles Soludo of Anambra State.
+            </p>
+            <p>
+                The meeting was attended by Governors Seyi Makinde of Oyo State; Babajide Sanwo-Olu of Lagos; Godwin Obaseki of Edo; Hope Uzodinma of Imo; Abiodun Oyebanji of Ekiti; Duoye Diri of Bayelsa; Ademola Adeleke of Osun; Umo Eno of Akwa Ibom; Siminalayi Fubara of Rivers; and Bassey Otu of Cross River.
+            </p>
+            <p>
+                Other attendees included Governors Francis Nwifuru of Ebonyi State; Lucky Aiyedatiwa of Ondo; Peter Mbah of Enugu; Sheriff Oborevwori of Delta State; and Alex Otti of Abia State.
+            </p>
+            <p>
+                “The forum discussed the minimum wage demanded by Labour and unanimously agreed that the minimum wage should be reflective of the cost of living, and that each state should be allowed to negotiate its minimum wage,” the communique stated
+            </p>
+            <p>
+                Meanwhile, the Presidency had on Monday appealed to Nigerians not to put unnecessary pressure on the President, assuring them that the Federal Government would transmit the proposed bill on the new minimum wage to the National Assembly once it was ready.
+            </p>
+            <p>
+                The Special Adviser to the President on Information and Strategy, Bayo Onanuga, made the plea in a terse statement sent to The PUNCH on Thursday.
+            </p>
+            <p>
+                “People should be patient,” he stated.
+            </p>
+            <p>
+                While Organised Labour is adamant about its N250,000 minimum wage demand, the state governors said that paying even the N62,000 proposed by the Federal Government would plunge many states into debt.
+            </p>
+            <p>
+                This was even as President Bola Tinubu demanded more time for consultation on Wednesday.
+            </p>
+            <h2>
+                Labour insists on national minimum wage
+            </h2>
+            <p>
+                Reacting to the proposal of the governors, the National Treasurer of the NLC, Akeem Ambali, in an interview with Saturday PUNCH, insisted that the governors had no power to negotiate the new minimum wage.
+            </p>
+            <p>
+                He added that the governors were compelled by law to implement the new national minimum wage. Ambali advised the governors to stop trying to strong-arm the Federal Government and labour with their request to negotiate with labour individually, and rather focus on how they would implement the national minimum wage when it is approved.
+            </p>
+            <p>
+                Ambali noted that it was regrettable that labour had to always resort to strike actions to get the government to yield to its demands. He asked the governors make public how much they earn, and subject it to negotiations.
+            </p>
+            <p>
+                He said, “Traditionally, the minimum wage is a national issue; it is not a sub-national negotiation. That is the essence of the Minimum Wage Act, and the law is clear. Governors don’t have the power to negotiate the minimum wage. What they can only negotiate are other allowances, but the minimum wage is a social protection content, and it is not only applicable to Nigeria.
+            </p>
+            <p>
+                “My advice for the governors is that they should prepare their balance sheet and look at how to implement the national minimum wage once it is approved. They should not stress themselves with the issue of negotiating with Labour on a state level. After all, we have seen what happened in Zamfara, where they refused to pay the current minimum wage (N30,000) until Labour issued an ultimatum, and they quickly started paying. Some states are still not paying the current minimum wage. We know what happened in Anambra, which is the state of the Vice Chairman of the Southern Governors’ Forum, Charles Soludo. When you look at all that, you will realise that some of them (governors) may not have good intentions. In fact, the majority of them are not labour-friendly and they are not pro-workers.”
+            </p>
+            <p>
+                Ambali further urged President Bola Tinubu to go ahead and recommend the new minimum wage to the National Assembly after consultation with Organised Labour on the agreement.
+            </p>
+            <p>
+                “It is a tripartite committee. Two are on the same page, because they are employers, and the two cumulatively amount to one, because they are both employees. It is only the employees that are agitating, because they are the ones that feel the pinch; they know where it hurts. Mr President should concentrate his energy on engaging Labour with realistic data and statistics, which can be obtained from the Federal Bureau of Statistics. How much does it take to feed a family in a month? We should be guided by that. Once we are able to do that and we are sincere about it, the president can then engage labour, and we will resolve this amicably,” he added.
+            </p>
+            <p>
+                Speaking on the governors who were still defaulting, Ambali said, “While we commend those who are paying the minimum wage, we also condemn those who are not paying, because they are earning their own fantastic salaries. Maybe the option will eventually be to refer salary payment of governors to the minimum wage as well, so we can also put it up for debate by a committee. Once we are able to do that, nobody will have the effrontery to say they want to first negotiate with workers at the governors’ level”
+            </p>
+            <p>
+                The labour leader also said it was looking as though the Organised Private Sector was being influenced by the government. He noted that when the negotiations began, the OPS stated that no one earned less than N93,000 in any private establishment. He stated that it was shocking that those same people now wanted to pay less than N70,000. He added, “This is because of the influence of some of the governors, who tried to cajole them to fall in line. The OPS, if left on their own, are ready to pay, so all these arguments that they are bringing up are afterthoughts.”
+            </p>
+            <p>
+                The NLC further cautioned state governors against exhibiting dictatorial tendencies. The congress noted that it was compelled to address the recent statements made by some governors regarding their desire to pay what they deemed fit to Nigerian workers as the minimum wage.
+            </p>
+            <p>
+                “This notion is not only dictatorial but also undermines the very essence of having a national minimum wage in Nigeria,” the NLC’s spokesperson, Benson Upah, stated in a statement sent to The PUNCH in Abuja.
+            </p>
+            <p>
+                Explaining the concept of a national minimum wage, Upah noted that it was not an arbitrary decision. He said, “It represents a national wage floor; a baseline below which no worker should be paid. This threshold is a collective agreement that ensures a minimum standard of living for every worker. The governors’ demand to unilaterally determine the minimum wage negates this principle and threatens the welfare of Nigerian workers and the national economy.”
+            </p>
+            <p>
+                Upah stressed that it was important to remind the governors that the national minimum wage was not synonymous with the individual pay structures of the states, which they implement religiously, reflecting their unique financial capabilities and circumstances. He further added that the diversity in pay structures underscored the flexibility that already existed within the system, allowing states to reward their workers in alignment with their financial realities.
+            </p>
+            <p>
+                “Furthermore, the governors’ argument appears inconsistent when juxtaposed with the remuneration of political office holders. Why is there no hue and cry when political office holders across the nation receive uniform salaries as determined by the Revenue Mobilisation, Allocation and Fiscal Commission? This double standard, which pits a privileged few against the poor majority, is an issue that should be of concern to those who love this country.”
+            </p>
+            <strong>
+                Caution govs, TUC tells president
+            </strong>
+            <p>
+                Also commenting, the Deputy President of the TUC, Dr Tommy Etim, said Organised Labour would not negotiate with governors. In an interview with Saturday PUNCH, he said, “They are trying to create an unnecessary problem where there is none. I think Mr President should caution them, because pensions and the minimum wage are constitutional issues, and they are under the exclusive legislation.
+            </p>
+            <p>
+                “If the national minimum wage is approved today, it is incumbent on them to implement it. They can either negotiate it upwards or stop any negotiation, because it is not within their purview. The issue of the national minimum wage is tripartite in nature, and that is what we have done. Once the president ends the consultation, he will definitely send it to the National Assembly for them to legislate on it, so that it will be returned for the president’s assent.”
+            </p>
+            <p>
+                He added that no state governor had the right to negotiate the minimum wage downwards. “They can only negotiate it upwards. Labour doesn’t even have the right to negotiate the minimum wage with state governors. It is a tripartite committee for a reason.”
+            </p>
+            <p>
+                Etim further urged workers to remain resolute and believe in the negotiation, hopeful that the Federal Government would do the needful.
+            </p>
+            <p>
+                <strong>
+                    Govs should pay better wage 
+                </strong>– Expert
+            </p>
+            <p>
+                Reacting to the minimum wage issue, an economist and development expert, Aliyu Ilias, asked the governors to tread with caution. According to Ilias, the governors must surpass their current stance and commit to implementing a higher minimum wage.
+            </p>
+            <p>
+                He added that despite federal subsidies intended to support state finances, the responsibility lay with state leaders to improve wage conditions.
+            </p>
+            <p>
+                Ilias said, “I don’t think the governors have an excuse. They just have to move from where they are and pay better minimum wage. Since the Federal Government has removed subsidy, money is getting to them. There are about 20 million Nigerians working for the government, at federal, state and local government levels. And, we have to consider the private sector too. The private sector may not be able to afford that N62,000. Also, the state governments are very key, as they cannot even pay the N30,000. Some are still paying N18,000.”
+            </p>
+            <p>
+                Ilias also called for clarity from the government regarding the role of the Federation Account Allocation Committee in funding wage increases. He urged concerted efforts between the government and labour unions to resolve the ongoing disagreements, particularly noting tensions between the NLC and southern governors.
+            </p>
+            <p>
+                “Our government should be clear on whether the Federation Account Allocation Committee is part of the reason they are expecting them to pay that salary to that level. I think the tripartite committee needs to work well. And, the president should consult more to have a better resolution,” he said.
+            </p>
+            <p>
+                <em>
+                    Additional reports: <strong>Godfrey George and Deborah Tolu-Kolawole</strong>
+                </em>
+            </p>
+           <div class="share-story">
+                <p style="font-size: 12px;">
+                    Kindly share this story:
+                </p>
+                <ul style="display: flex; gap: 15px; list-style-type: none;">
+                    <li>
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.75 30H6.25C2.79875 30 0 27.2013 0 23.75V6.25C0 2.79875 2.79875 0 6.25 0H23.75C27.2025 0 30 2.79875 30 6.25V23.75C30 27.2013 27.2025 30 23.75 30ZM20.32 23.565C20.5888 23.7562 20.9338 23.8037 21.2425 23.6862C21.55 23.57 21.7775 23.3062 21.8462 22.9862C22.57 19.5837 24.3275 10.9688 24.9862 7.87375C25.035 7.64 24.9525 7.3975 24.77 7.24125C24.5863 7.08625 24.3313 7.04125 24.105 7.125C20.6112 8.4175 9.85 12.455 5.45125 14.0837C5.1725 14.1863 4.99125 14.455 5 14.75C5.01 15.0437 5.20875 15.3 5.49375 15.3862C7.46625 15.975 10.0562 16.7962 10.0562 16.7962C10.0562 16.7962 11.265 20.4513 11.8962 22.3088C11.975 22.5425 12.1587 22.7263 12.3987 22.7888C12.64 22.8513 12.895 22.7863 13.075 22.6163C14.0887 21.66 15.655 20.1813 15.655 20.1813C15.655 20.1813 18.6313 22.3637 20.32 23.565ZM11.145 16.335L12.5437 20.95L12.855 18.0275C12.855 18.0275 18.26 13.1525 21.3425 10.3725C21.4325 10.2913 21.445 10.155 21.37 10.0588C21.295 9.9625 21.1587 9.94 21.0562 10.005C17.485 12.2863 11.145 16.335 11.145 16.335Z" fill="#229ED9"></path></svg>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 50 50">
+                            <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                            </svg>
+                    </li>
+                    <li>
+                        <svg height="30" width="30" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" style="fill:#1777f2;"></path></svg>
+                    </li>
+                    <li>
+                        <svg height="30" width="30" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="WhatsApp-Logo-Icon"><path d="M116.225,-0.001c-11.264,0.512 -26.112,1.536 -32.768,3.072c-10.24,2.048 -19.968,5.12 -27.648,9.216c-9.728,4.608 -17.92,10.752 -25.088,17.92c-7.68,7.68 -13.824,15.872 -18.432,25.6c-4.096,7.68 -7.168,17.408 -9.216,27.648c-1.536,6.656 -2.56,21.504 -2.56,32.768c-0.512,4.608 -0.512,10.752 -0.512,13.824l0,251.905l0,13.824c0.512,11.264 1.536,26.112 3.072,32.768c2.048,10.24 5.12,19.968 9.216,27.648c4.608,9.728 10.752,17.92 17.92,25.088c7.68,7.68 15.872,13.824 25.6,18.432c7.68,4.096 17.408,7.168 27.648,9.216c6.656,1.536 21.504,2.56 32.768,2.56c4.608,0.512 10.752,0.512 13.824,0.512l251.904,0l13.824,0c11.264,-0.512 26.112,-1.536 32.768,-3.072c10.24,-2.048 19.968,-5.12 27.648,-9.216c9.728,-4.608 17.92,-10.752 25.088,-17.92c7.68,-7.68 13.824,-15.872 18.432,-25.6c4.096,-7.68 7.168,-17.408 9.216,-27.648c1.536,-6.656 2.56,-21.504 2.56,-32.768c0.512,-4.608 0.512,-10.752 0.512,-13.824l0,-265.729c-0.512,-11.264 -1.536,-26.112 -3.072,-32.768c-2.048,-10.24 -5.12,-19.968 -9.216,-27.648c-4.608,-9.728 -10.752,-17.92 -17.92,-25.088c-7.68,-7.68 -15.872,-13.824 -25.6,-18.432c-7.68,-4.096 -17.408,-7.168 -27.648,-9.216c-6.656,-1.536 -21.504,-2.56 -32.768,-2.56c-4.608,-0.512 -10.752,-0.512 -13.824,-0.512l-265.728,0Z" style="fill:url(#_Linear1);fill-rule:nonzero;"></path><path d="M344.754,289.698c-4.56,-2.282 -26.98,-13.311 -31.161,-14.832c-4.18,-1.521 -7.219,-2.282 -10.259,2.282c-3.041,4.564 -11.78,14.832 -14.44,17.875c-2.66,3.042 -5.32,3.423 -9.88,1.14c-4.561,-2.281 -19.254,-7.095 -36.672,-22.627c-13.556,-12.087 -22.709,-27.017 -25.369,-31.581c-2.66,-4.564 -0.283,-7.031 2,-9.304c2.051,-2.041 4.56,-5.324 6.84,-7.986c2.28,-2.662 3.04,-4.564 4.56,-7.606c1.52,-3.042 0.76,-5.705 -0.38,-7.987c-1.14,-2.282 -10.26,-24.72 -14.06,-33.848c-3.701,-8.889 -7.461,-7.686 -10.26,-7.826c-2.657,-0.132 -5.7,-0.16 -8.74,-0.16c-3.041,0 -7.98,1.141 -12.161,5.704c-4.18,4.564 -15.96,15.594 -15.96,38.032c0,22.438 16.34,44.116 18.62,47.159c2.281,3.043 32.157,49.089 77.902,68.836c10.88,4.697 19.374,7.501 25.997,9.603c10.924,3.469 20.866,2.98 28.723,1.806c8.761,-1.309 26.98,-11.029 30.781,-21.677c3.799,-10.649 3.799,-19.777 2.659,-21.678c-1.139,-1.902 -4.179,-3.043 -8.74,-5.325m-83.207,113.573l-0.061,0c-27.22,-0.011 -53.917,-7.32 -77.207,-21.137l-5.539,-3.287l-57.413,15.056l15.325,-55.959l-3.608,-5.736c-15.184,-24.145 -23.203,-52.051 -23.192,-80.704c0.033,-83.611 68.083,-151.635 151.756,-151.635c40.517,0.016 78.603,15.811 107.243,44.474c28.64,28.663 44.404,66.764 44.389,107.283c-0.035,83.617 -68.083,151.645 -151.693,151.645m129.102,-280.709c-34.457,-34.486 -80.281,-53.487 -129.103,-53.507c-100.595,0 -182.468,81.841 -182.508,182.437c-0.013,32.156 8.39,63.546 24.361,91.212l-25.892,94.545l96.75,-25.37c26.657,14.535 56.67,22.194 87.216,22.207l0.075,0c100.586,0 182.465,-81.852 182.506,-182.448c0.019,-48.751 -18.946,-94.59 -53.405,-129.076" style="fill:#fff;"></path></g><defs><linearGradient gradientTransform="matrix(0,-512,-512,0,256.001,512)" gradientUnits="userSpaceOnUse" id="_Linear1" x1="0" x2="1" y1="0" y2="0"><stop offset="0" style="stop-color:#25cf43;stop-opacity:1"></stop><stop offset="1" style="stop-color:#61fd7d;stop-opacity:1"></stop></linearGradient></defs></svg>
+                    </li>
+                    <li>
+                        <svg height="30" width="30" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"></path><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"></rect><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"></path><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"></path></g></g></svg>
+                    </li>
+                    <li>
+                        <svg height="30" width="30" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M448,512l-384,0c-35.348,0 -64,-28.652 -64,-64l0,-384c0,-35.344 28.652,-64 64,-64l384,0c35.348,0 64,28.656 64,64l0,384c0,35.348 -28.652,64 -64,64Z" style="fill:#f04923;fill-rule:nonzero;"></path><path d="M322.84,312.896c-15.68,0 -28.444,-12.76 -28.444,-28.44c0,-15.688 12.764,-28.456 28.444,-28.456c15.684,0 28.448,12.768 28.448,28.456c0,15.68 -12.764,28.44 -28.448,28.44Zm5.008,46.716c-19.412,19.384 -56.612,20.892 -67.548,20.892c-10.944,0 -48.148,-1.508 -67.536,-20.896c-2.88,-2.88 -2.88,-7.548 0,-10.428c2.876,-2.872 7.548,-2.876 10.424,0c12.236,12.24 38.412,16.584 57.112,16.584c18.696,0 44.876,-4.344 57.132,-16.588c2.888,-2.872 7.552,-2.868 10.424,0.008c2.88,2.884 2.876,7.548 -0.008,10.428Zm-158.604,-75.16c0,-15.688 12.764,-28.452 28.456,-28.452c15.676,0 28.432,12.764 28.432,28.452c0,15.68 -12.756,28.436 -28.432,28.436c-15.692,0 -28.456,-12.756 -28.456,-28.436Zm273.02,-28.452c0,-21.992 -17.828,-39.82 -39.82,-39.82c-10.736,0 -20.456,4.268 -27.62,11.172c-27.22,-19.64 -64.724,-32.328 -106.496,-33.784l18.14,-85.348l59.264,12.6c0.724,15.068 13.064,27.092 28.308,27.092c15.712,0 28.448,-12.736 28.448,-28.444c0,-15.708 -12.736,-28.444 -28.448,-28.444c-11.172,0 -20.74,6.504 -25.392,15.876l-66.18,-14.068c-1.84,-0.4 -3.772,-0.04 -5.348,0.992c-1.588,1.028 -2.692,2.644 -3.088,4.488l-20.256,95.228c-42.384,1.176 -80.488,13.88 -108.06,33.74c-7.152,-6.86 -16.844,-11.1 -27.54,-11.1c-21.992,0 -39.824,17.828 -39.824,39.82c0,16.18 9.668,30.08 23.528,36.312c-0.612,3.96 -0.948,7.976 -0.948,12.044c0,61.268 71.316,110.932 159.288,110.932c87.972,0 159.292,-49.664 159.292,-110.932c0,-4.04 -0.332,-8.032 -0.936,-11.964c13.948,-6.196 23.688,-20.144 23.688,-36.392Z" style="fill:#fff;fill-rule:nonzero;"></path></g></svg>
+                    </li>
+                </ul>
+           </div>
+           <div style="text-align: center;">
+            <p style="font-style: oblique; color: rgb(169, 172, 176);">
+                All rights reserved. This material, and other digital content on this website , may not be reproduced, published, broadcast, rewritten or redistributed in whole or in part without prior express written permission from PUNCH.
+            </p>
+            <p> <b>Contact: <a href="mailto:theeditor@punchng.com"> theeditor@punchng.com </a></b></p>
+           </div>
+           <div class="whatsapp-container">
+            <p> 
+                Stay informed and ahead of the curve! Follow The Punch Newspaper on WhatsApp for real-time updates, breaking news, and exclusive content. Don't miss a headline – join now!
+            </p>
+            <div class="whatsapp-link">
+                <a href="https://whatsapp.com/channel/0029Va5M78l35fLt7xvmGQ2z" target="_blank" >Join The Punch Newspapers Channel</a>
+            </div>
+           </div>
+        </article>
+
+        <aside class="aside-right">
+            <img src="https://cdnc.heyzine.com/files/uploaded/v2/f9360fb0338cbac352cc45ee1e0d9a148c35daa2.pdf-thumb.jpg" style="width: 100%;">
+            <div style="width: 100%; height: 500px;">
+
+            </div>
+            <img src="https://cdn.punchng.com/wp-content/uploads/2023/10/12163722/WhatsApp-Image-2023-10-10-at-8.33.12-PM.jpeg" alt="Follow Punch on Whatsapp" style="width: 300px; height: 300px;">
+
+            <div>
+                <div">
+                    <div></div>
+                    <h3>
+                    LATEST NEWS
+                    </h3>
+                </div>
+            </div>    
+
+            <div class="news-section">
+                <ul>
+                    <li>
+                        <span class="minute-display">
+                            21 minutes ago
+                        </span>
+                        <article class="latest-news">
+                            Politician feeding fat, asking Nigerians to sacrifice - Bakare
+                        </article>
+                    </li>
+                    <li>
+                        <span class="minute-display">
+                            22 minutes ago
+                        </span>
+                        <article class="latest-news">
+                            Fuel imports gulp N2tn monthly - FG
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        </main>
+        <div class="search-popup" id="search-popup">
+            <div class="search-close" id="search-close">
+                <span class="close-icon" id="close-icon">X</span>
+            </div>
+            <div class="search-box" id="search-box">
+                <div class="input-search" id="input-search">
+                    <input type="text">
+                </div>
+                <div class="search-button-container" id="search-button-container">
+                    <button class="search-button-red" id="search-button-red"> 
+                        <svg width="13" height="13" viewBox="0 0 13 13"><title>suchen</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <img src="https://cdn.punchng.com/wp-content/uploads/2021/05/11134444/logo-white.png" height="50" class="footer-logo" alt="punch footer logo" width="150">
+            </div>
+
+            <div class="footer-main">
+                <ul class="footer-content">
+                    <li>News</li>
+                    <li>Sports</li>
+                    <li>Metro</li>
+                    <li>Plus</li>
+                    <li>Politics</li>
+                    <li>Featured</li>
+                    <li>Latest News</li>
+                    <li>Business</li>
+                    <li>Business & Economy</li>
+                    <li>Opinion</li>
+                    <li>Entertainment</li>
+                    <li>Auto</li>
+                    <li>Famous</li>
+                    <li>Barka Da Sallah</li>
+                    <li>Barrier Breakers</li>
+                    <li>Breaking News</li>
+                    <li>Brexit</li>
+                    <li>Columns</li>
+                    <li>Corona</li>
+                    <li>Anti-Corruption</li>
+                    <li>Biafra</li>
+                    <li>Boko Haram</li>
+                    <li>Case</li>
+                    <li>Review Court</li>
+                    <li>News Court</li>
+                    <li>Trivia</li>
+                    <li>Campus</li>
+                    <li>Champion</li>
+                    <li>Celebrity</li>
+                    <li>City Round</li>
+                    <li>Interview</li>
+                    <li>Panorama</li>
+                    <li>Opinion</li>
+                    <li>Special</li>
+                    <li>Features</li>
+                    <li>Spice</li>
+                    <li>Technology</li>
+                    <li>Famous</li>
+                    <li>Parent</li>
+                    <li>Education</li>
+                    <li>Cartoon</li>
+                    <li>Columns</li>
+                    <li>Advertise</li>
+                    <li>Diaspora</li>
+                    <li>Subscribe</li>
+                </ul>
+                <div class="footer-nav">
+                    <div class="footer-input-container">
+                        <input class="footer-input" type="text" placeholder="search">
+                            <button class="footer-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
+                            </button>
+                    </div>       
+                    <div class="subscription-tab"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path></svg>
+                        <b>Subscribe</b></div>
+
+                    <ul class="footer-socials">
+                        <li class="sos"> 
+                            <a aria-label="punch facebook url" href="https://www.facebook.com/punchnewspaper/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path></svg></a>
+                        </li>
+                        <li class="sos">
+                            <a aria-label="punch instagram url" href="https://www.instagram.com/punchnewspapers/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path></svg></a>
+                        </li>
+                        <li class="sos">
+                            <a aria-label="punch twitter url" href="https://twitter.com/MobilePunch" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg></a>
+                        </li>
+                        <li class="sos">
+                            <a aria-label="punch linkedin url" href="https://www.linkedin.com/company/punchnewspapers/mycompany/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path></svg></a>
+                        </li>
+                        <li class="sos">
+                            <a aria-label="punch youtubr url" href="https://www.youtube.com/channel/UCKBMh5v6VrB0t75ryyiVsBg?sub_confirmation=1" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"></path></svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p style="font-size: 15px;">
+                    punchng.com © 1971- 2024 Punch Nigeria Limited
+                </p>
+                <ul class="footer-bottom-right">
+                    <li><a href="https://punchng.com/about-us/">About us</a></li>
+                    <li><a href="https://punchng.com/advertise-with-us/">Advertise with us<a href="https://punchng.com/about-us/">About us</a></a></a></li>
+                    <li><a href="https://punchng.com/contact/">Contact</a></a></li>
+                </ul>
+            </div>
+        </footer>
+<script src="app.js"></script>
+</body>
+</html>
