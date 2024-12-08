@@ -5,6 +5,14 @@ const closeIcon = document.getElementById("close-icon");
 const stickyAside = document.getElementById("side-social-media");
 const progressBar = document.getElementById("progress");
 
+let date = new Date().toDateString();
+console.log(date);
+
+
+const dateDisplay = document.getElementById("date-display");
+
+dateDisplay.innerText = date;
+
 const menuDisplay = document.getElementById("menu-dropdown");
 const menuClick = document.getElementById("menu-bar");
 const menuClose = document.getElementById("menu-close");
@@ -13,7 +21,6 @@ const documentHeight = document.documentElement.scrollHeight - window.innerHeigh
 
 searchButton.addEventListener("click", openSearchModal )
 menuClick.addEventListener("click", openMenuModal )
-
 
 closeIcon.addEventListener("click", closeSearchModal )
 menuClose.addEventListener("click", closeMenuModal)
